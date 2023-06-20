@@ -10,8 +10,8 @@ function App() {
       <div className="bg-nature h-screen w-screen  ">
         <Header/>
         <Home />
-        
       </div>
+      
       <Main />
       <Carrosel />
       <Depoimentos />

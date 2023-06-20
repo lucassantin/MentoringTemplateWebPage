@@ -19,10 +19,10 @@ export function Header() {
 
             <div className="flex flex-row gap-5 cursor-pointer">
                 <div><a href="https://api.whatsapp.com/send/?phone=5548996372616&text&type=phone_number&app_absent=0" target="_blank">
-                    <InstagramLogo />
+                    <InstagramLogo size={32}/>
                     </a></div>
                 <div><a href="https://www.instagram.com/sandramara_dutra/" target="_blank">
-                    <WhatsappLogo /> 
+                    <WhatsappLogo size={32}/> 
                     </a></div>
             </div>
         </header>
