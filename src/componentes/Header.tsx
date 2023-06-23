@@ -10,19 +10,20 @@ export function Header() {
 
             <div>
                 <ul className="flex flex-row text-[20px] font-medium list-none gap-16 cursor-pointer ">
-                    <a>Home</a>
-                    <a>Apresentação</a>
-                    <a>Mentorias</a>
-                    <a>Depoimentos</a>
+                    <a className=" hover:bg-colorContrastHover/60 py-1 px-4 rounded-full">Home</a>
+                    <a className=" hover:bg-colorContrastHover/60 py-1 px-4 rounded-full">Apresentação</a>
+                    <a className=" hover:bg-colorContrastHover/60 py-1 px-4 rounded-full">Mentorias</a>
+                    <a className=" hover:bg-colorContrastHover/60 py-1 px-4 rounded-full">Depoimentos</a>
                 </ul>
             </div>
 
-            <div className="flex flex-row gap-5 cursor-pointer">
-                <div><a href="https://api.whatsapp.com/send/?phone=5548996372616&text&type=phone_number&app_absent=0" target="_blank">
-                    <InstagramLogo size={32}/>
+            <div className="flex flex-row gap-5 pr-5 cursor-pointer">
+                <div><a href="https://api.whatsapp.com/send/?phone=5548996372616&text&type=phone_number&app_absent=0" 
+                target="_blank">
+                    <InstagramLogo size={36}/>
                     </a></div>
                 <div><a href="https://www.instagram.com/sandramara_dutra/" target="_blank">
-                    <WhatsappLogo size={32}/> 
+                    <WhatsappLogo size={36}/> 
                     </a></div>
             </div>
         </header>

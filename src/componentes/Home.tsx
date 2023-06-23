@@ -19,7 +19,7 @@ export function Home() {
           </a>
 
           <a>
-            <h4 className='text-3xl underline'>Saiba Mais!</h4>
+            <h4 className='text-3xl underline cursor-pointer'>Saiba Mais!</h4>
           </a> 
         </div>
       </div>
