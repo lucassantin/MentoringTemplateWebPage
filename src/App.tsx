@@ -1,4 +1,4 @@
-import { Carrosel } from "./componentes/Carrosel"
+import { Mentorias } from "./componentes/Mentorias"
 import { Depoimentos } from "./componentes/Depoimentos"
 import { Header } from "./componentes/Header"
 import { Home } from "./componentes/Home"
@@ -11,7 +11,7 @@ function App() {
         <Home />
       </div>
       
-      <Carrosel />
+      <Mentorias />
       <Depoimentos />
     </div>
   )

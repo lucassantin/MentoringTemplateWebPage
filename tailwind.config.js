@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         colorNature: "#277e1c",
+        colorNatureHover: "#17640D",
         colorContrast: "#1e6091",
         colorContrastHover: "#184e77",
       }
