@@ -15,14 +15,14 @@ export function SaibaMais() {
 
   return (
     <>
-      <button onClick={() => HandleShow()}>
+      <button className="focus:outline-none" onClick={() => HandleShow()}>
         <h4 className="text-white text-3xl underline cursor-pointer">
           Saiba Mais!
         </h4>
       </button>
 
       <Modal
-        className="absolute  w-full h-full bg-[#ffffff13] backdrop-filter backdrop-blur-md top-0 left-0"
+        className="absolute w-full h-full bg-[#ffffff13] backdrop-filter backdrop-blur-md top-0"
         show={show}
         onHide={() => setShow(false)}
       >

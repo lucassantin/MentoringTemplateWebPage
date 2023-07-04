@@ -1,6 +1,6 @@
 import Sandra from "../assets/sandra.png";
 import { Button } from "./Button";
-import { SaibaMais } from "./SaibaMais";
+import { SaibaMais } from "./Info/SaibaMais";
 
 export function Home() {
   return (
