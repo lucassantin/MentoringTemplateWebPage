@@ -1,4 +1,4 @@
-import cardImg from "../assets/cardImg.jpeg";
+import cardImg from "../../assets/cardImg.jpeg";
 
 export const CardsStructure = {
   TituloMentoria1: {

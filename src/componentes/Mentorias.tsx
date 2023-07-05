@@ -1,5 +1,5 @@
 import { CarrouselScroll } from "./CarrouselScroll";
-import { SaibaMaisMent } from "./Info/SaibaMaisMent";
+import { SaibaMais } from "./Info/SaibaMais";
 
 export function Mentorias() {
   return (
@@ -59,7 +59,7 @@ export function Mentorias() {
         <button className="bg-colorNature hover:bg-colorNatureHover text-white text-[20px] font-bold py-3 px-5 rounded-3xl">
           AGENDE SUA MENTORIA
         </button>
-        <SaibaMaisMent />
+        <SaibaMais />
       </div>
     </div>
   );
