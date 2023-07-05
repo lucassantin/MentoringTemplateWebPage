@@ -4,7 +4,7 @@ import { SaibaMais } from "./Info/SaibaMais";
 
 export function Home() {
   return (
-    <main className="relative px-8 pt-6 text-white flex justify-between">
+    <main className="relative px-8 pt-[124px] text-white flex justify-between">
       <div className=" w-[800px]">
         <p className="text-7xl pt-[60px] ">
           Mentora especialista em direcionamento vocacional

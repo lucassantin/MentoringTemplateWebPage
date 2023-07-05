@@ -1,20 +1,22 @@
-import { Mentorias } from "./componentes/Mentorias"
-import { Depoimentos } from "./componentes/Depoimentos"
-import { Header } from "./componentes/Header"
-import { Home } from "./componentes/Home"
+import { Mentorias } from "./componentes/Mentorias";
+import { Depoimentos } from "./componentes/Depoimentos";
+import { Header } from "./componentes/Header";
+import { Home } from "./componentes/Home";
+import { Footer } from "./componentes/Footer";
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <>
       <div className="bg-nature bg-cover h-screen w-screen  ">
-        <Header/>
+        <Header />
         <Home />
       </div>
-      
+
       <Mentorias />
       <Depoimentos />
-    </div>
-  )
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

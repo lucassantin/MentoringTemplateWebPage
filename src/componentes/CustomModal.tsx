@@ -1,9 +1,7 @@
-import Modal, { ModalProps } from  '@mui/material/Modal';
-interface ICustomModalProps extends ModalProps {
-  children: React.ReactElement;
-}
-export function CustomModal({children, ...rest}:ICustomModalProps){
-  return(
+import Modal, { ModalProps } from "@mui/material/Modal";
+
+export function CustomModal({ children, ...rest }: ModalProps) {
+  return (
     <Modal
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
@@ -13,5 +11,5 @@ export function CustomModal({children, ...rest}:ICustomModalProps){
         {children}
       </div>
     </Modal>
-  )
+  );
 }

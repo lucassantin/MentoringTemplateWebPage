@@ -1,5 +1,5 @@
 import star from "../assets/star.svg";
-import { Stars } from "./stars";
+import { Stars } from "./Stars";
 
 export const DepoimentosStructure = {
   "Ana Silveira": {
@@ -13,7 +13,7 @@ export const DepoimentosStructure = {
       alt: "5 estrela",
     },
     DepoimentoText: {
-      text: "Lorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit amet.",
+      text: '"Lorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit ametLorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit amet."',
     },
   },
   "José de Alencar": {
@@ -27,7 +27,7 @@ export const DepoimentosStructure = {
       alt: "5 estrela",
     },
     DepoimentoText: {
-      text: "Lorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit amet.",
+      text: '"Lorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit ametLorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit amet."',
     },
   },
   "Beatriz Motta": {
@@ -41,13 +41,13 @@ export const DepoimentosStructure = {
       alt: "5 estrela",
     },
     DepoimentoText: {
-      text: "Lorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit amet.",
+      text: '"Lorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit ametLorem Lorem ipsum dolor sit amet.Lorem Lorem ipsum dolor sit amet."',
     },
   },
 };
 export function Depoimentos() {
   return (
-    <div className="bg-colorNature bg-cover px-[120px] pt-[50px]">
+    <div className="bg-colorNature bg-cover px-[120px] pt-[50px] pb-[150px]">
       <p className="text-white text-7xl pb-[50px] flex justify-center w-full h-[px] ">
         Depoimentos
       </p>
@@ -56,11 +56,11 @@ export function Depoimentos() {
         {Object.entries(DepoimentosStructure).map(([key, value]) => {
           return (
             <div
-              className="w-[350px] h-[480px] bg-gradient-to-t from-[#0e3452] text-white
+              className="w-[350px] h-[480px] py-7 gap-1 bg-gradient-to-t from-[#0e3452] text-white
               to-colorContrast rounded-3xl flex flex-col items-center shadow-black shadow-2xl"
             >
               <img
-                className="rounded-full object-cover w-[140px] h-[140px] shadow-blue-950 shadow-lg"
+                className="rounded-full object-cover w-[120px] h-[120px] shadow-blue-950 shadow-lg"
                 src={`${value.imagePerfil.source}`}
                 alt={`${value.imagePerfil.alt}`}
               />
@@ -69,6 +69,9 @@ export function Depoimentos() {
                 source={value.ImageEstrela.source}
                 alt={value.ImageEstrela.alt}
               />
+              <p className="flex justify-center px-7 text-2xl pt-3">
+                {value.DepoimentoText.text}
+              </p>
             </div>
           );
         })}
